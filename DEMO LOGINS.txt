@@ -1,0 +1,29 @@
+GOVINTEL AI
+Government Intelligence & Service Delivery Platform
+===================================================
+DEMO ACCOUNTS — LOCAL PROTOTYPE ONLY
+
+CITIZEN PORTAL
+No login required. Open http://localhost:8000
+
+GOVERNMENT OFFICIAL
+Username: staff
+Password: staff123
+
+ADMINISTRATOR / POLICY OWNER
+Username: admin
+Password: admin123
+
+All credentials are fictional and intended solely for the hackathon.
+Never use these passwords in a public or production deployment.
+
+QUICK START
+1. Extract the entire ZIP to a folder.
+2. Install Python 3.11+ if necessary.
+3. Double-click start_windows.bat.
+4. Open http://localhost:8000 if the browser does not open.
+5. Use Demo logins or Demo login notepad in the application.
+6. Install Tesseract for scanned evidence; see README.md.
+
+The app runs without Ollama using an explicitly labelled extractive fallback.
+To use the local generative AI model, install Ollama and pull llama3.2:3b.

@@ -1,0 +1,16 @@
+services:
+  govintel:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      HOST: "0.0.0.0"
+      NO_BROWSER: "1"
+      OLLAMA_URL: "http://ollama:11434"
+      USE_OLLAMA: "auto"
+    volumes: ["govintel-data:/app/data"]
+  ollama:
+    image: ollama/ollama:latest
+    volumes: ["ollama:/root/.ollama"]
+volumes:
+  govintel-data:
+  ollama:
